@@ -1,0 +1,119 @@
+.footer {
+  background-color: $dirtwhite;
+  .footer--container {
+    padding: $pd-7-pc $pd-12-pc $pd-3-pc;
+  }
+
+  &__menu {
+    padding: $pd-4-pc $pd-15-pc;
+    border-bottom: 1px solid $black;
+    @include flex-between;
+  }
+
+  &__item {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $black;
+    font-size: $fz-xs;
+    font-family: "Gilroy Bold";
+    text-align: center;
+    @include transition;
+  }
+
+  &__item:nth-child(3) {
+    color: $orange;
+    font-family: "Homemade Apple";
+    font-size: $fz-standart;
+    text-transform: none;
+    margin: 0 $pd-10-pc;
+  }
+
+  &__item:nth-child(3):hover {
+    font-size: $fz-m;
+  }
+
+  &__item:hover {
+    font-size: $fz-s;
+    @include shadow-text;
+  }
+
+  &__socials {
+    @include flex-between;
+    padding: $pd-5-pc 30%;
+  }
+
+  &__link {
+    height: 40px;
+    border-radius: 50%;
+    @include transition;
+  }
+
+  &__link:hover {
+    @include shadow;
+    background-color: $orange;
+  }
+
+  &__terms {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__terms--text {
+    padding: 0 $pd-3-pc;
+    color: $black;
+    font-size: $fz-xs;
+    @include transition;
+  }
+
+  &__terms--text:hover {
+    font-size: $fz-s;
+    font-weight: $f-500;
+    @include shadow-text;
+  }
+
+  &__terms--link {
+    text-decoration: none;
+    @extend .footer__terms--text;
+  }
+
+  @media screen and (max-width: 720px) {
+    &__link {
+      height: 20px;
+    }
+  }
+
+  @media screen and (max-width: $m) {
+    &__item {
+      font-size: $fz-xxs;
+    }
+
+    &__item:nth-child(3) {
+      font-size: $fz-s;
+    }
+
+    &__item:nth-child(3):hover {
+      font-size: $fz-standart;
+    }
+
+    &__terms--text {
+      font-size: $fz-xxs;
+    }
+
+    &__item:hover,
+    &__terms--text:hover {
+      font-size: $fz-xs;
+    }
+  }
+
+  @media screen and(max-width: $s) {
+    &__menu {
+      flex-direction: column;
+    }
+
+    &__item {
+      padding: $pd-3-pc $pd-0;
+    }
+  }
+}
