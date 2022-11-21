@@ -15,14 +15,14 @@
     text-transform: capitalize;
     color: $black;
     font-size: $fz-xs;
-    font-family: "Gilroy Bold";
+    font-family: "Gilroy Bold", monospace;
     text-align: center;
     @include transition;
   }
 
   &__item:nth-child(3) {
     color: $orange;
-    font-family: "Homemade Apple";
+    font-family: $logo-font, cursive;
     font-size: $fz-standart;
     text-transform: none;
     margin: 0 $pd-10-pc;

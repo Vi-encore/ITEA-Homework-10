@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: $primary-font;
+  font-family: $primary-font, monospace;
   overflow-x: hidden;
   background-color: $white;
   color: $black;
