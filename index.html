@@ -12,7 +12,7 @@
     />
 
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-min.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -73,16 +73,58 @@
             <a href="" class="article-1__btn">find gift now</a>
           </div>
           <div class="article-2 heropage__article">
-            <img class="heropage__img" src="img/img-1.png" alt="Happy couple" />
+            <picture class="heropage__picture">
+              <source
+                srcset="img/img-1-m.png"
+                type="image/png"
+                media="(max-width: 992px)"
+              />
+              <source
+                srcset="img/img-1-s.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+              <source
+                srcset="img/img-1-m.png"
+                type="image/png"
+                media="(max-width: 576px)"
+              />
+
+              <img
+                class="heropage__img"
+                src="img/img-1.png"
+                alt="Happy couple"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
         <div class="heropage__line">
           <div class="article-3 heropage__article">
-            <img
-              class="heropage__img"
-              src="img/img-2.png"
-              alt="Thank you card"
-            />
+            <picture class="heropage__picture">
+              <source
+                srcset="img/img-2-m.png"
+                type="image/png"
+                media="(max-width: 992px)"
+              />
+              <source
+                srcset="img/img-2-s.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+              <source
+                srcset="img/img-2-m.png"
+                type="image/png"
+                media="(max-width: 576px)"
+              />
+
+              <img
+                class="heropage__img"
+                src="img/img-2.png"
+                alt="Thank you card"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="article-4 heropage__article">
             <h3 class="article-4__head">How we work</h3>
@@ -105,44 +147,126 @@
         </div>
         <div class="about-us__cards">
           <div class="about-us__card">
-            <img
-              class="about-us__img"
-              src="img/birthday-1-card.png"
-              alt="Birthday"
-            />
+            <picture class="about-us__picture">
+              <source
+                srcset="img/birthday-1-card-m.png"
+                type="image/png"
+                media="(max-width: 1200px)"
+              />
+
+              <source
+                srcset="img/birthday-1-card-s.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+              <source
+                srcset="img/birthday-1-card-m.png"
+                type="image/png"
+                media="(max-width: 576px)"
+              />
+
+              <img
+                class="about-us__img"
+                src="img/birthday-1-card.png"
+                alt="Birthday"
+                loading="lazy"
+              />
+            </picture>
+
             <div class="about-us__about">
               <p class="about-us__header">Birthday</p>
               <a class="about-us__more" href="#">see more</a>
             </div>
           </div>
           <div class="about-us__card">
-            <img
-              class="about-us__img"
-              src="img/aniv-2-card.png"
-              alt="Anniversary"
-            />
+            <picture class="about-us__picture">
+              <source
+                srcset="img/aniv-2-card-m.png"
+                type="image/png"
+                media="(max-width: 1200px)"
+              />
+              <source
+                srcset="img/aniv-2-card-s.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+              <source
+                srcset="img/aniv-2-card-m.png"
+                type="image/png"
+                media="(max-width: 576px)"
+              />
+
+              <img
+                class="about-us__img"
+                src="img/aniv-2-card.png"
+                alt="Anniversary"
+                loading="lazy"
+              />
+            </picture>
+
             <div class="about-us__about">
               <p class="about-us__header">Anniversary</p>
               <a class="about-us__more" href="#">see more</a>
             </div>
           </div>
           <div class="about-us__card">
-            <img
-              class="about-us__img"
-              src="img/valent-3-card.png"
-              alt="Valentine's Day"
-            />
+            <picture class="about-us__picture">
+              <source
+                srcset="img/valent-3-card-m.png"
+                type="image/png"
+                media="(max-width: 1200px)"
+              />
+
+              <source
+                srcset="img/valent-3-card-s.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+              <source
+                srcset="img/valent-3-card-m.png"
+                type="image/png"
+                media="(max-width: 576px)"
+              />
+
+              <img
+                class="about-us__img"
+                src="img/valent-3-card.png"
+                alt="Valentine's Day"
+                loading="lazy"
+              />
+            </picture>
+
             <div class="about-us__about">
               <p class="about-us__header">Valentine's Day</p>
               <a class="about-us__more" href="#">see more</a>
             </div>
           </div>
           <div class="about-us__card">
-            <img
-              class="about-us__img"
-              src="img/christmas-4-card.png"
-              alt="Christmas"
-            />
+            <picture class="about-us__picture">
+              <source
+                srcset="img/christmas-4-card-m.png"
+                type="image/png"
+                media="(max-width: 1200px)"
+              />
+              <source
+                srcset="img/christmas-4-card-s.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+              <source
+                srcset="img/christmas-4-card-m.png"
+                type="image/png"
+                media="(max-width: 576px)"
+              />
+
+              <img
+                class="about-us__img"
+                src="img/christmas-4-card.png"
+                alt="Christmas"
+                loading="lazy"
+              />
+            </picture>
+
             <div class="about-us__about">
               <p class="about-us__header">Christmas</p>
               <a class="about-us__more" href="#">see more</a>
@@ -169,7 +293,25 @@
         </div>
         <div class="blog__grid">
           <div class="blog__item--main">
-            <img class="blog__img" src="img/blog-img.png" alt="Happy couple" />
+            <picture class="blog__picture">
+              <source
+                srcset="img/blog-img.png"
+                type="image/png"
+                media="(max-width: 992px)"
+              />
+              <source
+                srcset="img/blog-img-m.png"
+                type="image/png"
+                media="(max-width: 680px)"
+              />
+
+              <img
+                class="blog__img"
+                src="img/blog-img.png"
+                alt="Happy couple"
+                loading="lazy"
+              />
+            </picture>
             <div class="blog__description">
               <p class="blog__hook--card">Mr. John Doe</p>
               <h4 class="blog__header--maincard">
@@ -218,25 +360,25 @@
                 srcset="img/facebook-min.png"
                 media="(max-width: 720px)"
               />
-              <img src="img/facebook.png" />
+              <img src="img/facebook.png" loading="lazy" />
             </picture>
           </a>
           <a href="#" target="_blank" class="footer__link">
             <picture class="footer__img">
               <source srcset="img/twitter-min.png" media="(max-width: 720px)" />
-              <img src="img/twitter.png" />
+              <img src="img/twitter.png" loading="lazy" />
             </picture>
           </a>
           <a href="#" target="_blank" class="footer__link">
             <picture class="footer__img">
               <source srcset="img/insta-min.png" media="(max-width: 720px)" />
-              <img src="img/insta.png" />
+              <img src="img/insta.png" loading="lazy" />
             </picture>
           </a>
           <a href="#" target="_blank" class="footer__link">
             <picture class="footer__img">
               <source srcset="img/youtube-min.png" media="(max-width: 720px)" />
-              <img src="img/youtube.png" />
+              <img src="img/youtube.png" loading="lazy" />
             </picture>
           </a>
           <a href="#" target="_blank" class="footer__link">
@@ -245,7 +387,7 @@
                 srcset="img/pinterest-min.png"
                 media="(max-width: 720px)"
               />
-              <img src="img/pinterest.png" />
+              <img src="img/pinterest.png" loading="lazy" />
             </picture>
           </a>
         </div>

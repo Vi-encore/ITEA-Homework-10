@@ -41,6 +41,10 @@
     background-color: $white;
   }
 
+  &__picture {
+    @extend .heropage__picture;
+  }
+
   &__img {
     width: $w-100;
   }
